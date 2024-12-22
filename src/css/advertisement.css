@@ -1,0 +1,54 @@
+/* advertisement */
+.advertisement-text {
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 1280px) {
+  .advertisement-text {
+    color: var(--color-black-text);
+    min-width: 1054px;
+    min-height: 228px;
+    font-size: 76px;
+    line-height: 1;
+    position: relative;
+  }
+}
+
+.advertisement-slogan {
+  color: var(--color-white-text);
+  background-color: var(--color-green-background);
+  display: inline-flex;
+  border-radius: 12px;
+  max-height: 102px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .advertisement-slogan {
+    min-height: 86px;
+    min-width: 675px;
+    align-items: flex-end;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .advertisement-slogan {
+    background-color: transparent;
+    align-items: center;
+  }
+  .advertisement-slogan::before {
+    content: '';
+    border-radius: 12px;
+    min-width: 808px;
+    min-height: 84px;
+    background-color: var(--color-green-background);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -11px;
+    top: 0;
+  }
+
+  .advertisement-desktop {
+    display: block;
+  }
+}

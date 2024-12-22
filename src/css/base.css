@@ -1,0 +1,104 @@
+:root {
+  --color-black-text: #141414;
+  --color-white-text: #fbfbfb;
+  --color-primary-brand: #7a3145;
+  --color-accent: #d4bfc4;
+  --color-green-background: #576f35;
+  --сolor-details: #858585;
+  --color-transparent-black: rgba(20, 20, 20, 0.2);
+  --color-success-state: #3cbc81;
+  --color-error-state: #e74a3b;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+
+  margin: 0;
+}
+
+/* COMMON STYLES */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+/* title for vegetables, reviews and your order  */
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: clamp(2.875rem, 2.148rem + 3.64vw, 3rem);
+  }
+}
+/* Styles for title for vegetables, reviews and your order in Tablet/PC devices */
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 1;
+
+    margin-bottom: 24px;
+  }
+}
+
+/* only red buttons */
+.btn {
+  min-width: 157px;
+  min-height: 52px;
+  border-radius: 30px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  background-color: var(--color-primary-brand);
+
+  transition: 250ms ease-in-out;
+  transition-property: color, background-color;
+}
+
+/* Start how-it-work to your-order */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.other-link {
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: color, background-color, border-radius;
+}
+.other-link:hover,
+.other-link:focus {
+  border-radius: 4px;
+  color: var(--color-primary-brand);
+  background-color: var(--color-accent);
+}

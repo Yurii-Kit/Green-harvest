@@ -1,0 +1,137 @@
+/* #region HEADER */
+
+.page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
+  background-color: transparent;
+}
+
+.header-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 32px;
+  }
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 1280px) {
+  .nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo-icon {
+  width: 168px;
+  height: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .logo-icon {
+    width: 216px;
+    height: 20px;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hed-nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .nav-link-header {
+    border: 1px solid var(--color-white-text);
+    border-radius: 12px;
+    padding: 12px;
+    min-width: 83px;
+    min-height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-white-text);
+  }
+}
+.nav-link-header:hover,
+.nav-link-header:focus,
+.nav-link-shop:hover,
+.nav-link-shop:focus {
+  color: var(--color-primary-brand);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.nav-link-header:active {
+  color: var(--color-primary-brand);
+  background-color: var(--color-white-text);
+  border-color: var(--color-white-text);
+}
+.nav-link-shop {
+  padding: 16px 32px;
+  color: var(--color-white-text);
+}
+.nav-link-shop:active {
+  color: var(--color-primary-brand);
+  background-color: var(--color-white-text);
+}
+
+.burger-btn {
+  padding: 0;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .burger-btn {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.burger-icon {
+  display: block;
+  stroke-width: 3px;
+  stroke: var(--color-white-text);
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* #endregion HEADER*/
